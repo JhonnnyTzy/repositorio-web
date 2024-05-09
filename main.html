@@ -5,25 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="etyle.css">
-    <title>Document</title>
+    <title>Product Display</title>
 </head>
 <body>
-    
-    <h3>mostrador de productos</h3>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h3>Product Display</h3>
     <div class="image-container">
-        <img src="foto1.jpg" alt="image 1" class="image" data-description="(GRAGON DE CHINA) precion:100 Bs.">
-        
-        <img src="foto2.jpg" alt="image 2" class="image" data-description="(LOBO  ASTRAL) precion:50 Bs.">
-        
-        <img src="foto3.jpg" alt="image 3" class="image" data-description="(LEON PENDEJP) precion:75 Bs.">
+        <img src="foto1.jpg" alt="Image 1 - Dragon de China (Precio: 100 Bs.)" class="image" data-description="(DRAGON DE CHINA) precio: 100 Bs.">
+        <img src="foto2.jpg" alt="Image 2 - Lobo Astral (Precio: 50 Bs.)" class="image" data-description="(LOBO ASTRAL) precio: 50 Bs.">
+        <img src="foto3.jpg" alt="Image 3 - Leon Pendejp (Precio: 75 Bs.)" class="image" data-description="(LEON PENDEJP) precio: 75 Bs.">
     </div>
 
+    <!-- El div del modal solo debe existir una vez -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <p id="modal-description"></p>
         </div>
     </div>
-    <script src="java.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
